@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary SEO -->
+  <title>Tidewater Bike Repair | Same-Day Bicycle Servicing in Portland</title>
+  <meta name="description" content="Tidewater Bike Repair offers same-day tune-ups, brake and gear repairs, and wheel truing in Portland. Book online or walk in.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="Tidewater Bike Repair">
+  <meta name="theme-color" content="#0b4f5c">
+  <link rel="canonical" href="https://www.example.com/">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tidewater Bike Repair">
+  <meta property="og:title" content="Tidewater Bike Repair | Same-Day Bicycle Servicing">
+  <meta property="og:description" content="Same-day tune-ups, brake and gear repairs, and wheel truing in Portland.">
+  <meta property="og:url" content="https://www.example.com/">
+  <meta property="og:image" content="https://www.example.com/images/og-cover.jpg">
+  <meta property="og:image:alt" content="A mechanic adjusting a bicycle derailleur in the Tidewater workshop">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Performance -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BicycleStore",
+    "name": "Tidewater Bike Repair",
+    "url": "https://www.example.com/",
+    "telephone": "+1-503-555-0142",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "214 Harbor Lane",
+      "addressLocality": "Portland",
+      "addressRegion": "OR",
+      "postalCode": "97209",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    }]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Tidewater Bike Repair, home">Tidewater</a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span class="visually-hidden">Menu</span>
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+    </button>
+
+    <nav id="primary-nav" class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Book a repair</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Your bike, fixed today.</h1>
+      <p class="lead">Drop it off before 10 a.m. and pick it up by closing. Honest quotes, no surprise charges.</p>
+      <p><a class="button" href="#contact">Book a repair</a></p>
+    </section>
+
+    <section id="services" aria-labelledby="services-title">
+      <h2 id="services-title">What we fix</h2>
+      <ul class="service-list">
+        <li>
+          <h3>Tune-ups</h3>
+          <p>Brakes, gears, tire pressure, and a full safety check.</p>
+        </li>
+        <li>
+          <h3>Wheel truing</h3>
+          <p>Wobbly or bent rims straightened and re-tensioned.</p>
+        </li>
+        <li>
+          <h3>Drivetrain</h3>
+          <p>Chains, cassettes, and derailleurs replaced and adjusted.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="pricing" aria-labelledby="pricing-title">
+      <h2 id="pricing-title">Pricing</h2>
+      <table>
+        <caption>Standard repair prices, parts not included</caption>
+        <thead>
+          <tr><th scope="col">Service</th><th scope="col">Time</th><th scope="col">Price</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Basic tune-up</th><td>Same day</td><td>$65</td></tr>
+          <tr><th scope="row">Wheel truing</th><td>Same day</td><td>$30</td></tr>
+          <tr><th scope="row">Drivetrain service</th><td>1–2 days</td><td>$95</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">Common questions</h2>
+      <details>
+        <summary>Do I need an appointment?</summary>
+        <p>No. Walk-ins are welcome, but booking guarantees a same-day slot.</p>
+      </details>
+      <details>
+        <summary>Do you service e-bikes?</summary>
+        <p>Yes, for mechanical work. We don't repair motors or batteries.</p>
+      </details>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Book a repair</h2>
+      <form id="booking-form" action="/book" method="post" novalidate>
+        <div class="field">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+          <p class="error" id="name-error" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-hint">
+          <p class="hint" id="email-hint">We'll send your confirmation here.</p>
+          <p class="error" id="email-error" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="service">Service</label>
+          <select id="service" name="service" required>
+            <option value="">Choose a service</option>
+            <option>Tune-up</option>
+            <option>Wheel truing</option>
+            <option>Drivetrain</option>
+          </select>
+          <p class="error" id="service-error" role="alert"></p>
+        </div>
+
+        <button class="button" type="submit">Send booking request</button>
+        <p id="form-status" class="status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <address>
+      Tidewater Bike Repair<br>
+      214 Harbor Lane, Portland, OR 97209<br>
+      <a href="tel:+15035550142">503-555-0142</a>
+    </address>
+    <p><small>&copy; 2026 Tidewater Bike Repair. Open Monday to Saturday, 8 a.m. to 6 p.m.</small></p>
+  </footer>
+</body>
+</html>
